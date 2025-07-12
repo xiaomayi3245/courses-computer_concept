@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C 語言互動學習指南 (AI 增強版)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", "Noto Sans TC", sans-serif;
+      }
+      .console-output {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        background-color: #1e293b; /* A darker blue-gray */
+        color: #e2e8f0; /* Lighter text for contrast */
+      }
+      #output-console strong {
+        color: #60a5fa;
+      }
+      #output-console code {
+        background-color: #334155;
+        padding: 0.2em 0.4em;
+        margin: 0;
+        font-size: 85%;
+        border-radius: 6px;
+      }
+      #output-console pre {
+        background-color: #334155;
+        padding: 1em;
+        border-radius: 8px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .ai-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .ai-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .chat-bubble {
+        max-width: 85%;
+        width: fit-content;
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .chat-bubble.user {
+        background-color: #2563eb;
+        color: white;
+        margin-left: auto;
+        border-bottom-right-radius: 0.25rem;
+      }
+      .chat-bubble.ai {
+        background-color: #475569;
+        color: white;
+        margin-right: auto;
+        border-bottom-left-radius: 0.25rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="flex flex-col md:flex-row min-h-screen">
+      <!-- Sidebar Navigation -->
+      <nav class="w-full md:w-72 bg-white shadow-lg p-4 md:p-6 shrink-0">
+        <h1 class="text-2xl font-bold text-blue-600 mb-6">C 語言 AI 學習</h1>
+        <ul id="topics-nav" class="space-y-2">
+          <!-- Topics will be inserted here by JS -->
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8 lg:p-10">
+        <div class="max-w-4xl mx-auto">
+          <article
+            id="topic-content"
+            class="bg-white p-6 rounded-lg shadow-md mb-8"
+          >
+            <h2
+              id="topic-title"
+              class="text-3xl font-bold mb-4 border-b pb-2 text-gray-700"
+            ></h2>
+            <div
+              id="topic-explanation"
+              class="prose max-w-none prose-indigo"
+            ></div>
+          </article>
+
+          <section id="interactive-section" class="hidden">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-gray-700">
+                ✍️ 動手試試看
+              </h3>
+              <div class="bg-gray-800 rounded-lg p-1 shadow-inner">
+                <textarea
+                  id="code-editor"
+                  class="w-full h-64 bg-[#1e293b] text-white font-mono text-sm p-4 rounded-md border-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  spellcheck="false"
+                ></textarea>
+              </div>
+              <div
+                class="mt-6 flex flex-wrap gap-3 justify-between items-center"
+              >
+                <button
+                  id="run-button"
+                  class="ai-button bg-blue-600 hover:bg-blue-700"
+                >
+                  ▶️ 執行模擬
+                </button>
+                <div class="flex flex-wrap gap-3">
+                  <button
+                    id="explain-button"
+                    class="ai-button bg-purple-600 hover:bg-purple-700"
+                  >
+                    ✨ 解釋
+                  </button>
+                  <button
+                    id="debug-button"
+                    class="ai-button bg-rose-600 hover:bg-rose-700"
+                  >
+                    ✨ 除錯
+                  </button>
+                  <button
+                    id="optimize-button"
+                    class="ai-button bg-teal-600 hover:bg-teal-700"
+                  >
+                    ✨ 優化
+                  </button>
+                  <button
+                    id="problem-button"
+                    class="ai-button bg-emerald-600 hover:bg-emerald-700"
+                  >
+                    ✨ 練習
+                  </button>
+                  <button
+                    id="tutor-button"
+                    class="ai-button bg-orange-500 hover:bg-orange-600"
+                  >
+                    ✨ AI 助教
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h3 class="text-xl font-semibold mb-4 text-gray-700">
+                🖥️ AI 輸出 / 模擬結果
+              </h3>
+              <div
+                id="output-console"
+                class="console-output rounded-lg p-6 min-h-[200px] shadow-inner transition-all duration-300 flex flex-col"
+              >
+                按下按鈕來與 AI 互動或查看程式碼的輸出結果...
+              </div>
+              <div id="chat-input-container" class="mt-4 hidden">
+                <div class="flex gap-2">
+                  <input
+                    type="text"
+                    id="chat-input"
+                    class="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="問 AI 助教一個問題..."
+                  />
+                  <button
+                    id="chat-send-button"
+                    class="ai-button bg-blue-600 hover:bg-blue-700"
+                  >
+                    傳送
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // --- DATA ---
+      const topics = [
+        {
+          id: "introduction",
+          title: "歡迎來到 C 語言的世界",
+          explanation: `<p>C 語言是一種功能強大、用途廣泛的程式語言。它以其<strong>高效能</strong>和<strong>對硬體的直接控制能力</strong>而聞名。學習 C 語言可以幫助你更深入地理解電腦是如何運作的。</p><p class="mt-4">點擊左側的教學主題，開始你的 C 語言學習之旅吧！</p>`,
+          code: null,
+        },
+        {
+          id: "hello-world",
+          title: "第一個程式：Hello, World!",
+          explanation: `<p>在學習任何程式語言時，第一個傳統的練習就是印出 "Hello, World!"。</p><ul class="list-disc list-inside space-y-2 my-4"><li><code>#include &lt;stdio.h&gt;</code>：引入標準輸入輸出函式庫。</li><li><code>int main() { ... }</code>：程式的<strong>進入點</strong>。</li><li><code>printf("Hello, World!\\n");</code>：將文字顯示在螢幕上。<code>\\n</code> 代表換行。</li><li><code>return 0;</code>：表示程式順利結束。</li></ul>`,
+          code: `#include <stdio.h>\n\nint main() {\n    printf("Hello, World!\\n");\n    return 0;\n}`,
+        },
+        {
+          id: "variables",
+          title: "變數與資料型態",
+          explanation: `<p>變數就像是儲存資料的容器。常見的基本資料型態有：</p><ul class="list-disc list-inside space-y-2 my-4"><li><code>int</code>：用於儲存整數。</li><li><code>float</code>：用於儲存單精度浮點數 (小數)。</li><li><code>char</code>：用於儲存單一字元。</li></ul><p><code>printf</code> 可以使用「格式指定符」來印出變數的值：<code>%d</code> (整數), <code>%f</code> (浮點數), <code>%c</code> (字元)。</p>`,
+          code: `#include <stdio.h>\n\nint main() {\n    int age = 25;\n    float pi = 3.14159;\n    char grade = 'A';\n\n    printf("我的年齡是 %d 歲。\\n", age);\n    printf("圓周率大約是 %f。\\n", pi);\n    printf("我的成績是 %c。\\n", grade);\n\n    return 0;\n}`,
+        },
+        {
+          id: "operators",
+          title: "運算子",
+          explanation: `<p>運算子是用於執行數學或邏輯運算的符號。</p><p><strong>算術運算子:</strong> <code>+</code> (加)、<code>-</code> (減)、<code>*</code> (乘)、<code>/</code> (除)、<code>%</code> (取餘數)。</p>`,
+          code: `#include <stdio.h>\n\nint main() {\n    int a = 10;\n    int b = 3;\n\n    printf("a + b = %d\\n", a + b);\n    printf("a %% b = %d (取餘數)\\n", a % b);\n\n    return 0;\n}`,
+        },
+      ];
+
+      let currentTopicId = "introduction";
+      let conversationHistory = [];
+
+      // --- DOM ELEMENTS ---
+      const dom = {
+        topicsNav: document.getElementById("topics-nav"),
+        topicTitle: document.getElementById("topic-title"),
+        topicExplanation: document.getElementById("topic-explanation"),
+        interactiveSection: document.getElementById("interactive-section"),
+        codeEditor: document.getElementById("code-editor"),
+        runButton: document.getElementById("run-button"),
+        explainButton: document.getElementById("explain-button"),
+        debugButton: document.getElementById("debug-button"),
+        optimizeButton: document.getElementById("optimize-button"),
+        problemButton: document.getElementById("problem-button"),
+        tutorButton: document.getElementById("tutor-button"),
+        outputConsole: document.getElementById("output-console"),
+        chatInputContainer: document.getElementById("chat-input-container"),
+        chatInput: document.getElementById("chat-input"),
+        chatSendButton: document.getElementById("chat-send-button"),
+      };
+
+      // --- UI MANAGEMENT ---
+      function setConsoleMode(mode) {
+        if (mode === "chat") {
+          dom.chatInputContainer.classList.remove("hidden");
+          dom.outputConsole.innerHTML = ""; // Clear for chat
+        } else {
+          dom.chatInputContainer.classList.add("hidden");
+          conversationHistory = []; // Reset history when leaving chat
+        }
+      }
+
+      function showLoading(message = "AI 思考中，請稍候...") {
+        dom.outputConsole.innerHTML = `<div class="flex items-center justify-center p-4">
+                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
+                <span class="ml-4 text-lg">${message}</span>
+            </div>`;
+      }
+
+      // --- GEMINI API CALL ---
+      async function callGemini(prompt) {
+        const apiKey = ""; // Provided by the execution environment
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+        const payload = {
+          contents: [{ role: "user", parts: [{ text: prompt }] }],
+        };
+
+        try {
+          const response = await fetch(apiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          if (!response.ok) {
+            const errorData = await response.json();
+            console.error("API Error:", errorData);
+            return `API 呼叫失敗: ${response.status}. 請檢查瀏覽器開發者主控台。`;
+          }
+          const result = await response.json();
+          if (
+            result.candidates &&
+            result.candidates[0]?.content?.parts[0]?.text
+          ) {
+            return result.candidates[0].content.parts[0].text;
+          } else {
+            console.error("Unexpected API response structure:", result);
+            return result.promptFeedback?.blockReason
+              ? `您的請求因「${result.promptFeedback.blockReason}」而被封鎖。`
+              : "從 AI 收到了無效的回應。";
+          }
+        } catch (error) {
+          console.error("Fetch Error:", error);
+          return `呼叫 AI 時發生網路錯誤：${error.message}`;
+        }
+      }
+
+      // --- CORE FUNCTIONS ---
+      function loadTopic(topicId) {
+        currentTopicId = topicId;
+        const topic = topics.find((t) => t.id === topicId);
+        if (!topic) return;
+
+        setConsoleMode("display");
+        document.querySelectorAll("#topics-nav li").forEach((li) => {
+          li.classList.remove("bg-blue-100", "font-semibold", "text-blue-700");
+          if (li.dataset.topicId === topicId) {
+            li.classList.add("bg-blue-100", "font-semibold", "text-blue-700");
+          }
+        });
+
+        dom.topicTitle.textContent = topic.title;
+        dom.topicExplanation.innerHTML = topic.explanation;
+
+        if (topic.code) {
+          dom.codeEditor.value = topic.code;
+          dom.interactiveSection.classList.remove("hidden");
+          dom.outputConsole.innerHTML =
+            "按下按鈕來與 AI 互動或查看程式碼的輸出結果...";
+        } else {
+          dom.interactiveSection.classList.add("hidden");
+        }
+      }
+
+      function runCSimulation(code) {
+        let output = "";
+        const variables = {};
+        try {
+          const lines = code.split("\n");
+          for (const line of lines) {
+            const trimmedLine = line.trim();
+            const varMatch = trimmedLine.match(
+              /^(int|float|char)\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*=\s*(.+);/
+            );
+            if (varMatch) {
+              const [, type, name, value] = varMatch;
+              if (type === "int") variables[name] = parseInt(value, 10);
+              else if (type === "float") variables[name] = parseFloat(value);
+              else if (type === "char")
+                variables[name] = value.replace(/'/g, "");
+              continue;
+            }
+            const printfMatch = trimmedLine.match(
+              /printf\("([^"]+)",?\s*(.*)\);/
+            );
+            if (printfMatch) {
+              let formatString = printfMatch[1];
+              const args = (printfMatch[2] || "")
+                .split(",")
+                .map((arg) => arg.trim())
+                .filter(Boolean);
+              let argIndex = 0;
+              formatString = formatString.replace(/%[dfc]/g, (match) => {
+                const varName = args[argIndex++];
+                return variables.hasOwnProperty(varName)
+                  ? variables[varName]
+                  : match;
+              });
+              output += formatString.replace(/\\n/g, "\n");
+            }
+          }
+          return output || "(程式碼沒有任何輸出)";
+        } catch (e) {
+          console.error(e);
+          return `模擬器錯誤：\n${e.message}`;
+        }
+      }
+
+      async function handleSimpleAIPrompt(prompt) {
+        setConsoleMode("display");
+        const code = dom.codeEditor.value;
+        if (!code.trim()) {
+          dom.outputConsole.textContent = "編輯器中沒有程式碼。";
+          return;
+        }
+        showLoading();
+        const fullPrompt = `${prompt}\n\n程式碼：\n\`\`\`c\n${code}\n\`\`\``;
+        const result = await callGemini(fullPrompt);
+        dom.outputConsole.textContent = result;
+      }
+
+      // --- EVENT LISTENERS ---
+      dom.runButton.addEventListener("click", () => {
+        setConsoleMode("display");
+        const code = dom.codeEditor.value;
+        dom.outputConsole.textContent = "執行中...";
+        setTimeout(() => {
+          dom.outputConsole.textContent = runCSimulation(code);
+        }, 200);
+      });
+
+      dom.explainButton.addEventListener("click", () =>
+        handleSimpleAIPrompt(
+          "作為一位專業的 C 語言導師，請用繁體中文，以清晰、條列式的方式，逐行解釋以下 C 語言程式碼的用途與意義。請讓解釋對初學者友善易懂。"
+        )
+      );
+      dom.debugButton.addEventListener("click", () =>
+        handleSimpleAIPrompt(
+          "作為一位經驗豐富的 C 語言開發者，請檢查以下程式碼是否存在語法錯誤、邏輯錯誤或潛在問題。請用繁體中文回答，如果發現錯誤，請指出錯誤在哪一行、錯誤的原因，並提供修正後的程式碼範例。如果沒有錯誤，也請說明程式碼功能正常。"
+        )
+      );
+      dom.optimizeButton.addEventListener("click", () =>
+        handleSimpleAIPrompt(
+          "作為一位 C 語言效能專家，請分析以下程式碼，並用繁體中文提供優化建議。建議可以包含提高執行效率、改善記憶體使用、或增進程式碼可讀性與維護性的方法。"
+        )
+      );
+
+      dom.problemButton.addEventListener("click", async () => {
+        setConsoleMode("display");
+        const currentTopic = topics.find((t) => t.id === currentTopicId);
+        const topicTitleText = currentTopic ? currentTopic.title : "C 語言基礎";
+        showLoading("正在為您產生練習題...");
+        const prompt = `作為一位 C 語言課程設計師，請針對「${topicTitleText}」這個主題，設計一個適合初學者的簡短練習題。請用繁體中文提供：\n1. **題目說明**：清楚描述題目要求。\n2. **起始程式碼**：提供一個包含 main 函式和必要 #include 的基礎模板，讓學習者可以專注在解題上。\n\n請讓題目有趣且切合主題。`;
+        const problem = await callGemini(prompt);
+        dom.outputConsole.textContent = problem;
+        const codeBlockMatch = problem.match(/```c\s*([\s\S]+?)\s*```/);
+        if (codeBlockMatch && codeBlockMatch[1]) {
+          dom.codeEditor.value = codeBlockMatch[1].trim();
+        }
+      });
+
+      dom.tutorButton.addEventListener("click", () => {
+        setConsoleMode("chat");
+        const welcomeBubble = document.createElement("div");
+        welcomeBubble.className = "chat-bubble ai";
+        welcomeBubble.textContent =
+          "你好！我是你的 AI 助教。你可以問我任何關於這段程式碼或 C 語言的問題。";
+        dom.outputConsole.appendChild(welcomeBubble);
+        dom.chatInput.focus();
+      });
+
+      async function handleChat() {
+        const userQuestion = dom.chatInput.value.trim();
+        if (!userQuestion) return;
+
+        dom.chatInput.value = "";
+        const userBubble = document.createElement("div");
+        userBubble.className = "chat-bubble user";
+        userBubble.textContent = userQuestion;
+        dom.outputConsole.appendChild(userBubble);
+        dom.outputConsole.scrollTop = dom.outputConsole.scrollHeight;
+
+        conversationHistory.push({ role: "user", text: userQuestion });
+
+        const loadingBubble = document.createElement("div");
+        loadingBubble.className = "chat-bubble ai";
+        loadingBubble.innerHTML = `<div class="flex items-center"><div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div><span class="ml-2">思考中...</span></div>`;
+        dom.outputConsole.appendChild(loadingBubble);
+        dom.outputConsole.scrollTop = dom.outputConsole.scrollHeight;
+
+        const code = dom.codeEditor.value;
+        const historyText = conversationHistory
+          .map((m) => `${m.role}: ${m.text}`)
+          .join("\n");
+        const prompt = `你是 C 語言 AI 助教。要友善且樂於助人。使用者目前的程式碼如下：\n\`\`\`c\n${code}\n\`\`\`\n\n以下是我們的對話紀錄：\n${historyText}\n\n請根據以上內容，用繁體中文回答使用者的最新問題。`;
+
+        const aiResponse = await callGemini(prompt);
+
+        loadingBubble.textContent = aiResponse;
+        conversationHistory.push({ role: "ai", text: aiResponse });
+        dom.outputConsole.scrollTop = dom.outputConsole.scrollHeight;
+      }
+
+      dom.chatSendButton.addEventListener("click", handleChat);
+      dom.chatInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          handleChat();
+        }
+      });
+
+      // --- PAGE INITIALIZATION ---
+      window.addEventListener("DOMContentLoaded", () => {
+        topics.forEach((topic) => {
+          const li = document.createElement("li");
+          li.className =
+            "cursor-pointer p-3 rounded-lg hover:bg-blue-50 transition duration-200 text-gray-600";
+          li.textContent = topic.title;
+          li.dataset.topicId = topic.id;
+          li.addEventListener("click", () => loadTopic(topic.id));
+          dom.topicsNav.appendChild(li);
+        });
+        loadTopic("introduction");
+      });
+    </script>
+  </body>
+</html>

@@ -13,4 +13,4 @@ pip install networkx pyvis
 
 ## 將生成的知識圖譜放到 Netlify
 
-https://celadon-semifreddo-0c8d37.netlify.app/
+https://course-intro2computer.netlify.app/
