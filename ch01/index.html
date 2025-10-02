@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算機概論：電腦科技的認識與應用</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .timeline-item {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .timeline-item:hover, .timeline-item.active {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .nav-link {
+            transition: all 0.2s ease;
+        }
+        .nav-link.active, .nav-link:hover {
+            background-color: #1E40AF; /* bg-blue-800 */
+            color: white;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar Navigation -->
+        <aside class="w-full md:w-64 bg-blue-900 text-white p-6 sticky top-0 h-screen overflow-y-auto">
+            <h1 class="text-2xl font-bold mb-8 text-center">課程大綱</h1>
+            <nav id="navigation">
+                <a href="#intro" class="nav-link block p-3 rounded-lg mb-2 font-semibold">1. 前言：資訊時代</a>
+                <a href="#history" class="nav-link block p-3 rounded-lg mb-2 font-semibold">2. 電腦發展史</a>
+                <a href="#types" class="nav-link block p-3 rounded-lg mb-2 font-semibold">3. 電腦的類型</a>
+                <a href="#applications" class="nav-link block p-3 rounded-lg mb-2 font-semibold">4. 資訊時代的應用</a>
+                <a href="#future" class="nav-link block p-3 rounded-lg mb-2 font-semibold">5. 互動與穿戴科技</a>
+                <a href="#summary" class="nav-link block p-3 rounded-lg mb-2 font-semibold">6. 課程總結</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 md:p-10">
+            <!-- Introduction Section -->
+            <section id="intro" class="content-section">
+                <h2 class="text-4xl font-bold mb-6 text-blue-900 border-l-4 border-blue-500 pl-4">前言：歡迎來到資訊時代</h2>
+                <p class="text-lg mb-4 leading-relaxed">我們正生活在一個由資訊與通信科技驅動的「後工業時代」。在這個時代，資訊成為最重要的資源，而電腦則是處理這些資訊不可或缺的工具。從智慧型手機到雲端伺服器，電腦科技已經滲透到我們生活的每一個角落，深刻地改變了我們的學習、工作、社交與娛樂方式。</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://placehold.co/800x400/3B82F6/FFFFFF?text=電腦科技正在改變世界" alt="資訊時代示意圖" class="w-full h-auto rounded-lg">
+                    <p class="mt-4 text-center text-gray-600">本章節將帶您認識電腦科技的基礎，從它的起源、演變，到現今五花八門的應用。</p>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section id="history" class="content-section">
+                <h2 class="text-4xl font-bold mb-6 text-blue-900 border-l-4 border-blue-500 pl-4">電腦發展史：從巨獸到掌心</h2>
+                <p class="text-lg mb-8">電腦的發展歷程僅僅數十年，卻是人類科技史上最驚人的躍進。我們可以根據其核心電子元件，將這段歷史劃分為幾個重要的世代。</p>
+                
+                <!-- Interactive Timeline -->
+                <div id="timeline" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
+                    <div class="timeline-item bg-white p-4 rounded-lg shadow-md text-center border-b-4 border-blue-500" data-target="gen1">
+                        <h3 class="font-bold text-xl">第一代</h3>
+                        <p class="text-gray-600">1946-1953</p>
+                        <p class="font-semibold text-blue-700">真空管</p>
+                    </div>
+                    <div class="timeline-item bg-white p-4 rounded-lg shadow-md text-center border-b-4 border-green-500" data-target="gen2">
+                        <h3 class="font-bold text-xl">第二代</h3>
+                        <p class="text-gray-600">1954-1963</p>
+                        <p class="font-semibold text-green-700">電晶體</p>
+                    </div>
+                    <div class="timeline-item bg-white p-4 rounded-lg shadow-md text-center border-b-4 border-yellow-500" data-target="gen3">
+                        <h3 class="font-bold text-xl">第三代</h3>
+                        <p class="text-gray-600">1964-1970</p>
+                        <p class="font-semibold text-yellow-700">積體電路 (IC)</p>
+                    </div>
+                    <div class="timeline-item bg-white p-4 rounded-lg shadow-md text-center border-b-4 border-red-500" data-target="gen4">
+                        <h3 class="font-bold text-xl">第四代</h3>
+                        <p class="text-gray-600">1971-至今</p>
+                        <p class="font-semibold text-red-700">超大型積體電路 (VLSI)</p>
+                    </div>
+                    <div class="timeline-item bg-white p-4 rounded-lg shadow-md text-center border-b-4 border-purple-500" data-target="gen5">
+                        <h3 class="font-bold text-xl">第五代</h3>
+                        <p class="text-gray-600">未來趨勢</p>
+                        <p class="font-semibold text-purple-700">人工智慧 (AI)</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Content -->
+                <div id="timeline-content" class="bg-white p-6 rounded-lg shadow-lg">
+                    <!-- Generation 1 -->
+                    <div id="gen1" class="timeline-details hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-700">第一代：真空管時代</h3>
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <p>以真空管為主要元件，體積龐大、耗電量驚人且極易產生高熱。世界上第一台電子電腦 <span class="font-bold">ABC (Atanasoff-Berry Computer)</span> 與廣為人知的 <span class="font-bold">ENIAC</span> 都是這個時代的產物。</p>
+                                <ul class="list-disc list-inside mt-4 space-y-2">
+                                    <li><strong>代表作：</strong>ENIAC, UNIVAC-1</li>
+                                    <li><strong>特性：</strong>體積巨大 (一個房間大小)、速度慢 (毫秒 ms)、使用機器語言</li>
+                                    <li><strong>貢獻：</strong>奠定了電腦發展的基礎，首次實現電子化高速運算。</li>
+                                </ul>
+                            </div>
+                            <img src="https://placehold.co/300x200/60A5FA/FFFFFF?text=真空管" alt="真空管" class="rounded-lg w-full md:w-1/3 object-cover">
+                        </div>
+                    </div>
+                    <!-- Generation 2 -->
+                    <div id="gen2" class="timeline-details hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">第二代：電晶體時代</h3>
+                         <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <p>電晶體的發明取代了真空管，使得電腦的體積大幅縮小，耗電量降低，運算速度和可靠性顯著提升。這個時期也出現了高階程式語言如 FORTRAN 和 COBOL。</p>
+                                <ul class="list-disc list-inside mt-4 space-y-2">
+                                    <li><strong>代表作：</strong>TRADIC</li>
+                                    <li><strong>特性：</strong>體積縮小、速度提升 (微秒 μs)、功耗降低、開始出現作業系統雛形</li>
+                                    <li><strong>貢獻：</strong>電腦開始進入商業應用領域，可靠性大大增強。</li>
+                                </ul>
+                            </div>
+                            <img src="https://placehold.co/300x200/4ADE80/FFFFFF?text=電晶體" alt="電晶體" class="rounded-lg w-full md:w-1/3 object-cover">
+                        </div>
+                    </div>
+                    <!-- Generation 3 -->
+                    <div id="gen3" class="timeline-details hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-yellow-700">第三代：積體電路 (IC) 時代</h3>
+                         <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <p>將數百個電晶體等電子元件蝕刻在單一矽晶片上，形成積體電路 (IC)。這讓電腦的生產成本更低、體積更小、效能更強大。IBM 360 系列是此時代的代表作。</p>
+                                <ul class="list-disc list-inside mt-4 space-y-2">
+                                    <li><strong>代表作：</strong>IBM 360 系列</li>
+                                    <li><strong>特性：</strong>體積更小、速度更快 (奈秒 ns)、多工處理、標準化</li>
+                                    <li><strong>貢獻：</strong>電腦商業化及量產普及成為可能，奠定現代電腦架構。</li>
+                                </ul>
+                            </div>
+                            <img src="https://placehold.co/300x200/FBBF24/FFFFFF?text=積體電路" alt="積體電路" class="rounded-lg w-full md:w-1/3 object-cover">
+                        </div>
+                    </div>
+                    <!-- Generation 4 -->
+                    <div id="gen4" class="timeline-details hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-red-700">第四代：超大型積體電路 (VLSI) 時代</h3>
+                         <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <p>隨著 VLSI 技術的成熟，數以萬計甚至百萬計的元件可以整合在單一晶片上。1971年 Intel 推出的 <span class="font-bold">4004 微處理器 (Microprocessor)</span>，將電腦的中央處理單元 (CPU) 整合在單晶片上，開啟了個人電腦 (PC) 的時代。</p>
+                                <ul class="list-disc list-inside mt-4 space-y-2">
+                                    <li><strong>代表作：</strong>個人電腦 (Apple II, IBM PC)</li>
+                                    <li><strong>特性：</strong>微型化、速度極快 (微微秒 ps)、價格低廉、圖形化使用者介面</li>
+                                    <li><strong>貢獻：</strong>電腦走入家庭與辦公室，網際網路開始萌芽。</li>
+                                </ul>
+                            </div>
+                            <img src="https://placehold.co/300x200/F87171/FFFFFF?text=微處理器+CPU" alt="微處理器" class="rounded-lg w-full md:w-1/3 object-cover">
+                        </div>
+                    </div>
+                    <!-- Generation 5 -->
+                    <div id="gen5" class="timeline-details hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-purple-700">第五代：人工智慧與未來趨勢</h3>
+                         <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <p>第五代電腦的目標是讓電腦具備學習、推理、及處理自然語言的能力，也就是人工智慧 (AI)。現今的發展方向包含平行處理、雲端運算、物聯網 (IoT)，以及更前瞻的量子電腦、生物電腦等。</p>
+                                <ul class="list-disc list-inside mt-4 space-y-2">
+                                    <li><strong>關鍵技術：</strong>人工智慧、機器學習、自然語言處理、雲端運算</li>
+                                    <li><strong>特性：</strong>智能化、網路化、無所不在</li>
+                                    <li><strong>目標：</strong>創造能像人類一樣思考和學習的機器。</li>
+                                </ul>
+                            </div>
+                            <img src="https://placehold.co/300x200/C084FC/FFFFFF?text=人工智慧" alt="人工智慧" class="rounded-lg w-full md:w-1/3 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Types Section -->
+            <section id="types" class="content-section">
+                <h2 class="text-4xl font-bold mb-6 text-blue-900 border-l-4 border-blue-500 pl-4">電腦的類型：從國家級到個人級</h2>
+                <p class="text-lg mb-8">根據效能、用途與成本，電腦可以分為許多類型。雖然界線日益模糊，但我們仍可大致區分為以下幾類：</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">超級電腦 (Supercomputer)</h3>
+                        <ul class="list-disc list-inside space-y-2 flex-grow">
+                            <li>擁有最強的運算速度，每秒可執行數兆次運算。</li>
+                            <li>造價極為高昂，通常為國家級單位或大型跨國公司所使用。</li>
+                            <li>主要應用於需要大量運算的領域，如：天氣預報、生物科技、航太科技、軍事研發等。</li>
+                            <li>一個國家的超級電腦性能，常被視為其科技水準的重要指標。</li>
+                            <li>著名案例：IBM的「深藍」(Deep Blue) 曾擊敗世界西洋棋冠軍。</li>
+                        </ul>
+                        <img src="https://placehold.co/600x300/1D4ED8/FFFFFF?text=超級電腦" class="w-full h-48 object-cover rounded-md mb-4" alt="超級電腦">
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">大型電腦 (Mainframe)</h3>
+                        <ul class="list-disc list-inside space-y-2 flex-grow">
+                            <li>效能僅次於超級電腦，但更著重於大規模、高可靠性的資料輸入與輸出（資料吞吐量）。</li>
+                            <li>採取集中式資料處理，可連接數百甚至數千個終端機同時作業。</li>
+                            <li>是大型機構的資訊骨幹，常見應用如：
+                                <ul class="list-['-_'] list-inside ml-6">
+                                    <li>金融機構及股市的交易處理。</li>
+                                    <li>航空公司的訂位系統。</li>
+                                    <li>政府的稅務或戶政資料處理。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="https://placehold.co/600x300/166534/FFFFFF?text=大型電腦" class="w-full h-48 object-cover rounded-md mb-4" alt="大型電腦">
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">微電腦 (Microcomputer)</h3>
+                        <ul class="list-disc list-inside space-y-2 flex-grow">
+                            <li>指採用微處理器 (Microprocessor) 作為 CPU 的電腦，是目前最普及的類型，又稱個人電腦 (PC)。</li>
+                            <li>具備體積小、價格低的特性，符合個人工作、生活與學習需求。</li>
+                            <li><strong>主要體系：</strong>
+                                <ul class="list-circle list-inside ml-6">
+                                    <li><strong>IBM 相容 PC：</strong>大多使用 Windows 作業系統，價格較低廉，是市場主流。</li>
+                                    <li><strong>蘋果麥金塔電腦 (Mac)：</strong>使用 macOS，以優異的設計、操作流暢度與系統穩定性著稱。</li>
+                                </ul>
+                            </li>
+                            <li><strong>主要外型：</strong>
+                                <ul class="list-circle list-inside ml-6">
+                                    <li><strong>桌上型電腦：</strong>擴充性佳，同價位下效能較強。</li>
+                                    <li><strong>筆記型電腦：</strong>輕便易攜，但擴充性與效能相對受限。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="https://placehold.co/600x300/BE123C/FFFFFF?text=個人電腦" class="w-full h-48 object-cover rounded-md mb-4" alt="個人電腦">
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">行動與嵌入式裝置</h3>
+                        <ul class="list-disc list-inside space-y-2 flex-grow">
+                            <li><strong>平板電腦：</strong>以觸控螢幕為主要輸入裝置，比筆記型電腦更輕巧易攜。</li>
+                            <li><strong>智慧型手機：</strong>整合了掌上型電腦 (PDA) 與電話功能，擁有獨立的行動作業系統，可透過安裝 App 擴充功能。</li>
+                            <li><strong>嵌入式電腦：</strong>被嵌入到特定功能的設備中，例如智慧家電 (冷氣、冰箱)、汽車的行車電腦、工業用的控制系統等，讓萬物聯網 (IoT) 成為可能。</li>
+                        </ul>
+                        <img src="https://placehold.co/600x300/9A3412/FFFFFF?text=行動裝置" class="w-full h-48 object-cover rounded-md mb-4" alt="行動裝置">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Applications Section -->
+            <section id="applications" class="content-section">
+                <h2 class="text-4xl font-bold mb-6 text-blue-900 border-l-4 border-blue-500 pl-4">資訊時代的應用：無所不在的影響力</h2>
+                <p class="text-lg mb-8">電腦科技已全面融入社會，從個人生活到國家管理，其應用幾乎無所不包。</p>
+                <div class="space-y-8">
+                    <!-- Personal Applications -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">個人應用：改變生活樣貌</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="bg-white p-4 rounded-lg shadow-md"><strong>工作與溝通：</strong>遠距辦公、電子郵件、即時通訊 (Line)。</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md"><strong>社交與娛樂：</strong>社群媒體 (Facebook)、線上遊戲、影音串流。</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md"><strong>商業與消費：</strong>網路購物 (PChome)、行動支付、網路銀行。</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md"><strong>資訊獲取：</strong>搜尋引擎 (Google)、線上地圖、網路新聞。</div>
+                            <div class="bg-white p-4 rounded-lg shadow-md"><strong>智慧生活：</strong>雲端儲存、智慧家電、家庭自動化。</div>
+                        </div>
+                    </div>
+                    <!-- Educational Applications -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">教育應用：翻轉學習模式</h3>
+                        <p class="mb-4">電腦打破了傳統教育的時空限制，帶來了更豐富、更多元的學習方式。</p>
+                        <ul class="list-disc list-inside bg-white p-6 rounded-lg shadow-md space-y-2">
+                            <li><strong>多媒體教學：</strong>透過文字、聲音、影像與動畫，讓教材更生動活潑。</li>
+                            <li><strong>遠距教學：</strong>讓學習不再受限於教室，實現終身學習的理想。</li>
+                            <li><strong>自主學習：</strong>網際網路是座巨大的圖書館，學生可依興趣主動探索知識。</li>
+                        </ul>
+                    </div>
+                     <!-- Social/Management Applications -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">社會/管理應用：提升整體效率</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-bold text-lg mb-2">企業資訊化</h4>
+                                <p>企業資源規劃 (ERP) 系統整合了生產、銷售、人資、財務等部門，大幅提升管理效率與競爭力。</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-bold text-lg mb-2">電子化政府</h4>
+                                <p>政府透過網路提供服務，如線上報稅、申辦業務，提升行政效率與便民度。</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="font-bold text-lg mb-2">醫療、交通與安全</h4>
+                                <p>電子病歷、交通監控系統 (GIS)、警用監視系統等，運用電腦科技來輔助專業作業，增進社會福祉與安全。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Section -->
+            <section id="future" class="content-section">
+                <h2 class="text-4xl font-bold mb-6 text-blue-900 border-l-4 border-blue-500 pl-4">互動與穿戴科技：人機界線的模糊</h2>
+                <p class="text-lg mb-8">隨著電腦體積越來越小、功能越來越強，它們正以新的形式與我們結合，創造出更直覺、更沉浸的互動體驗。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Interactive Tech -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x300/8B5CF6/FFFFFF?text=互動科技" class="w-full h-48 object-cover rounded-md mb-4" alt="互動科技">
+                        <h3 class="text-2xl font-bold mb-2">互動科技</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong>觸控互動：</strong>智慧型手機與平板電腦的核心，是最普及的人機介面。</li>
+                            <li><strong>體感互動：</strong>如任天堂 Wii、微軟 Kinect，透過偵測身體動作來操控，帶來全新的遊戲體驗。</li>
+                            <li><strong>腦波互動：</strong>尚在研究階段的尖端技術，期望未來能用「意念」直接控制電腦。</li>
+                        </ul>
+                    </div>
+                    <!-- Wearable Tech -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x300/EC4899/FFFFFF?text=穿戴科技" class="w-full h-48 object-cover rounded-md mb-4" alt="穿戴科技">
+                        <h3 class="text-2xl font-bold mb-2">穿戴科技</h3>
+                        <p>將微型電腦穿戴在身上，讓科技成為身體的延伸。這類裝置需要克服體積、運算能力與電池續航力的挑戰。</p>
+                         <ul class="list-disc list-inside space-y-2 mt-2">
+                            <li><strong>智慧眼鏡：</strong>如 Google Glass，將資訊直接投射在使用者眼前。</li>
+                            <li><strong>智慧手錶/手環：</strong>如 Apple Watch，整合了通訊、健康偵測與行動支付等功能。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <section id="summary" class="content-section">
+                <h2 class="text-4xl font-bold mb-6 text-blue-900 border-l-4 border-blue-500 pl-4">課程總結</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-lg space-y-4">
+                    <p>今天我們回顧了電腦科技從無到有的驚人旅程：</p>
+                    <ul class="list-decimal list-inside space-y-3">
+                        <li><strong>發展四階段：</strong>從笨重的真空管，到輕巧的電晶體，再到功能強大的積體電路(IC)與微處理器(VLSI)，電腦的演進速度超乎想像。</li>
+                        <li><strong>多元的類型：</strong>從國家級的超級電腦，到企業用的的大型電腦，再到普及的個人電腦與行動裝置，滿足了不同層次的需求。</li>
+                        <li><strong>全面的應用：</strong>電腦不僅是工具，更徹底改變了我們的生活、學習與工作方式，建構了今日的資訊社會。</li>
+                        <li><strong>未來的趨勢：</strong>人工智慧、互動科技與穿戴裝置，正預示著一個人機將更緊密結合的未來。</li>
+                    </ul>
+                    <p class="font-bold text-xl mt-6 text-center text-blue-800">電腦科技的發展永不停歇，理解它的過去與現在，是掌握未來的關鍵第一步。謝謝大家！</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('#navigation .nav-link');
+            const sections = document.querySelectorAll('.content-section');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const timelineDetails = document.querySelectorAll('.timeline-details');
+
+            function showSection(hash) {
+                // Default to #intro if hash is empty or not found
+                const targetHash = (hash && document.querySelector(hash)) ? hash : '#intro';
+                
+                sections.forEach(section => {
+                    if ('#' + section.id === targetHash) {
+                        section.classList.add('active');
+                    } else {
+                        section.classList.remove('active');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === targetHash) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+
+                 // Special handling for history section timeline
+                if (targetHash === '#history') {
+                    // Activate the first timeline item by default
+                    if (!document.querySelector('.timeline-item.active')) {
+                        timelineItems[0].click();
+                    }
+                }
+            }
+
+            // Navigation click handling
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    history.pushState(null, null, targetId); // Update URL without reloading
+                    showSection(targetId);
+                    window.scrollTo(0, 0);
+                });
+            });
+            
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', () => {
+                showSection(window.location.hash);
+            });
+
+            // Timeline interaction
+            timelineItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const targetId = this.dataset.target;
+
+                    // Update active state for items
+                    timelineItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Show the corresponding details
+                    timelineDetails.forEach(detail => {
+                        if (detail.id === targetId) {
+                            detail.classList.remove('hidden');
+                        } else {
+                            detail.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // Initial load
+            showSection(window.location.hash);
+        });
+    </script>
+</body>
+</html>
+
