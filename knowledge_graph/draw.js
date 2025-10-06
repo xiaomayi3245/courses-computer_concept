@@ -21,23 +21,24 @@ function drawGraph() {
   // parsing and collecting nodes and edges from the python
   nodes = new vis.DataSet([
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch1",
       id: "sec1_1_history",
       label: "\u96fb\u8166\u7684\u767c\u5c55\u6b77\u53f2",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch1\nID: sec1_1_history",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch1",
       id: "ch1_intro_app",
       label: "\u96fb\u8166\u79d1\u6280\u7684\u8a8d\u8b58\u8207\u61c9\u7528",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch1\nID: ch1_intro_app",
     },
     {
@@ -92,13 +93,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch1\nID: l3_gen5",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch1",
       id: "sec1_2_types",
       label: "\u96fb\u8166\u7684\u985e\u578b",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch1\nID: sec1_2_types",
     },
     {
@@ -132,23 +133,23 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch1\nID: l3_minicomputer",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch1",
       id: "l3_microcomputer",
       label: "\u5fae\u96fb\u8166",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch1\nID: l3_microcomputer",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch1",
       id: "l4_pc",
       label: "\u500b\u4eba\u96fb\u8166 (PC)",
-      level: 4,
+      /*level: 4,
       shape: "dot",
-      size: 10,
+      size: 10,*/
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch1\nID: l4_pc",
     },
     {
@@ -192,13 +193,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch1\nID: l4_smartphone",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch1",
       id: "sec1_3_apps",
       label: "\u96fb\u8166\u5728\u8cc7\u8a0a\u6642\u4ee3\u7684\u61c9\u7528",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch1\nID: sec1_3_apps",
     },
     {
@@ -232,34 +233,36 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch1\nID: l3_social_apps",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch2",
       id: "ch2_data_proc",
       label: "\u96fb\u8166\u8655\u7406\u8cc7\u6599\u7684\u65b9\u5f0f",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch2\nID: ch2_data_proc",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "ch3_hardware",
       label:
         "\u96fb\u8166\u786c\u9ad4\u7d44\u6210\u8207\u5468\u908a\u8a2d\u5099",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch3\nID: ch3_hardware",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch2",
       id: "sec2_1_units",
       label: "\u8cc7\u6599\u8655\u7406\u7684\u57fa\u672c\u55ae\u4f4d",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch2\nID: sec2_1_units",
     },
     {
@@ -283,13 +286,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch2\nID: l3_data_rate",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch2",
       id: "sec2_2_num_sys",
       label: "\u6578\u5b57\u7cfb\u7d71",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch2\nID: sec2_2_num_sys",
     },
     {
@@ -303,13 +306,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch2\nID: l3_binary",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch2",
       id: "l3_text_rep",
       label: "\u6587\u5b57\u8cc7\u6599\u8868\u793a\u6cd5",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch2\nID: l3_text_rep",
     },
     {
@@ -333,13 +336,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch2\nID: l3_octal_hex",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch2",
       id: "sec2_3_representation",
       label: "\u96fb\u8166\u8cc7\u6599\u8868\u793a\u6cd5",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch2\nID: sec2_3_representation",
     },
     {
@@ -393,33 +396,34 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch2\nID: l4_unicode",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "ch4_software",
       label: "\u96fb\u8166\u8edf\u9ad4\u7c21\u4ecb",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch4\nID: ch4_software",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "sec3_1_components",
       label: "\u8a8d\u8b58\u96fb\u8166\u7d44\u6210\u5143\u4ef6",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch3\nID: sec3_1_components",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "l3_5units",
       label: "\u96fb\u8166\u4e94\u5927\u55ae\u5143",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch3\nID: l3_5units",
     },
     {
@@ -453,13 +457,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch3\nID: l4_control_unit",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "l3_cpu",
       label: "CPU (\u4e2d\u592e\u8655\u7406\u5668)",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch3\nID: l3_cpu",
     },
     {
@@ -483,23 +487,23 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch3\nID: l4_alu",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "sec3_2_main_unit",
       label: "\u96fb\u8166\u4e3b\u6a5f\u7684\u7d44\u6210",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch3\nID: sec3_2_main_unit",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "l3_motherboard",
       label: "\u4e3b\u6a5f\u677f",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch3\nID: l3_motherboard",
     },
     {
@@ -513,13 +517,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch3\nID: l4_register",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "l4_cache",
       label: "\u5feb\u53d6\u8a18\u61b6\u9ad4",
-      level: 4,
+      /*level: 4,
       shape: "dot",
-      size: 10,
+      size: 10,*/
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch3\nID: l4_cache",
     },
     {
@@ -623,13 +627,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch3\nID: l4_sata",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "sec3_3_io",
       label: "\u8f38\u51fa/\u5165\u8a2d\u5099",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch3\nID: sec3_3_io",
     },
     {
@@ -653,23 +657,23 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch3\nID: sec3_4_faq",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "sec4_1_classification",
       label: "\u8edf\u9ad4\u7684\u5206\u985e",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch4\nID: sec4_1_classification",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "l3_sw_func_class",
       label: "\u529f\u80fd\u6027\u5206\u985e",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch4\nID: l3_sw_func_class",
     },
     {
@@ -693,13 +697,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch4\nID: l4_app_sw",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "l3_sw_auth_class",
       label: "\u6388\u6b0a\u65b9\u5f0f\u5206\u985e",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch4\nID: l3_sw_auth_class",
     },
     {
@@ -743,13 +747,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch4\nID: l4_freeware",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "sec4_2_system_sw_detail",
       label: "\u8a8d\u8b58\u7cfb\u7d71\u8edf\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch4\nID: sec4_2_system_sw_detail",
     },
     {
@@ -773,13 +777,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch4\nID: l3_dev_tool",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "sec4_3_app_sw_detail",
       label: "\u8a8d\u8b58\u61c9\u7528\u8edf\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch4\nID: sec4_3_app_sw_detail",
     },
     {
@@ -803,43 +807,44 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch4\nID: l3_multimedia_sw",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch4",
       id: "sec4_4_maintenance",
       label: "\u8edf\u9ad4\u5b89\u88dd\u8207\u7dad\u8b77",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch4\nID: sec4_4_maintenance",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "ch5_os",
       label: "\u4f5c\u696d\u7cfb\u7d71",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch5\nID: ch5_os",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "sec5_1_intro_os",
       label: "\u8a8d\u8b58\u4f5c\u696d\u7cfb\u7d71",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch5\nID: sec5_1_intro_os",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "l3_os_func",
       label: "\u4f5c\u696d\u7cfb\u7d71\u529f\u80fd",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch5\nID: l3_os_func",
     },
     {
@@ -863,13 +868,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch5\nID: l4_resource_mgt",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "l3_os_structure",
       label: "\u4f5c\u696d\u7cfb\u7d71\u7d50\u69cb",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch5\nID: l3_os_structure",
     },
     {
@@ -883,13 +888,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch5\nID: l4_layered_kernel",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "l3_os_op",
       label: "\u4f5c\u696d\u7cfb\u7d71\u904b\u4f5c",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch5\nID: l3_os_op",
     },
     {
@@ -913,13 +918,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch5\nID: l4_process_mgt",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "sec5_2_os_types",
       label: "\u4f5c\u696d\u7cfb\u7d71\u7684\u985e\u578b",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch5\nID: sec5_2_os_types",
     },
     {
@@ -933,23 +938,23 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch5\nID: l3_batch_multi",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "sec5_3_common_os",
       label: "\u5e38\u898b\u4f5c\u696d\u7cfb\u7d71\u4ecb\u7d39",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch5\nID: sec5_3_common_os",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "l3_desktop_os",
       label: "\u684c\u9762\u4f5c\u696d\u7cfb\u7d71",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch5\nID: l3_desktop_os",
     },
     {
@@ -983,13 +988,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch5\nID: l4_linux",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch5",
       id: "l3_mobile_os",
       label: "\u884c\u52d5\u4f5c\u696d\u7cfb\u7d71",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch5\nID: l3_mobile_os",
     },
     {
@@ -1013,33 +1018,34 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch5\nID: l4_android",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "ch6_multimedia",
       label: "\u6578\u4f4d\u591a\u5a92\u9ad4",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch6\nID: ch6_multimedia",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "sec6_1_intro_mm",
       label: "\u8a8d\u8b58\u591a\u5a92\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_1_intro_mm",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "sec6_2_text",
       label: "\u6587\u5b57\u5a92\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_2_text",
     },
     {
@@ -1063,13 +1069,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch6\nID: l3_font_format",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "sec6_3_audio",
       label: "\u97f3\u8a0a\u5a92\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_3_audio",
     },
     {
@@ -1093,13 +1099,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch6\nID: l3_audio_format",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "sec6_4_image",
       label: "\u5f71\u50cf\u5a92\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_4_image",
     },
     {
@@ -1133,13 +1139,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch6\nID: l3_image_format",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "sec6_5_video",
       label: "\u8996\u8a0a\u5a92\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_5_video",
     },
     {
@@ -1163,13 +1169,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch6\nID: l3_video_format",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch6",
       id: "sec6_6_animation",
       label: "\u52d5\u756b\u5a92\u9ad4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_6_animation",
     },
     {
@@ -1183,23 +1189,24 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch6\nID: l3_2d_3d_anim",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch7",
       id: "ch7_database",
       label: "\u8cc7\u6599\u5eab",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch7\nID: ch7_database",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch7",
       id: "sec7_1_principles",
       label: "\u8cc7\u6599\u5eab\u539f\u7406",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch7\nID: sec7_1_principles",
     },
     {
@@ -1223,13 +1230,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch7\nID: l3_dbms",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch7",
       id: "sec7_2_db_types",
       label: "\u8cc7\u6599\u5eab\u985e\u578b",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch7\nID: sec7_2_db_types",
     },
     {
@@ -1244,13 +1251,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch7\nID: l3_db_models",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch7",
       id: "sec7_3_relational_db",
       label: "\u95dc\u806f\u5f0f\u8cc7\u6599\u5eab",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch7\nID: sec7_3_relational_db",
     },
     {
@@ -1304,24 +1311,25 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch7\nID: l3_sql",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "sec8_1_intro_net",
       label: "\u8a8d\u8b58\u96fb\u8166\u7db2\u8def",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch8\nID: sec8_1_intro_net",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "ch8_network",
       label:
         "\u7db2\u8def\u8207\u884c\u52d5\u901a\u8a0a\u57fa\u672c\u6982\u5ff5",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch8\nID: ch8_network",
     },
     {
@@ -1345,13 +1353,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch8\nID: l4_lan_wan",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "l3_net_devices",
       label: "\u7db2\u8def\u8a2d\u5099",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch8\nID: l3_net_devices",
     },
     {
@@ -1405,13 +1413,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch8\nID: l4_star_ring_bus",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "sec8_2_protocols",
       label: "\u7db2\u8def\u901a\u8a0a\u5354\u5b9a",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch8\nID: sec8_2_protocols",
     },
     {
@@ -1435,13 +1443,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch8\nID: l3_tcpip_model",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "l3_ieee802",
       label: "IEEE 802 \u6a19\u6e96",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch8\nID: l3_ieee802",
     },
     {
@@ -1465,23 +1473,23 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch8\nID: l4_802_11",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "sec8_3_mobile_comm",
       label: "\u884c\u52d5\u901a\u8a0a\u7cfb\u7d71",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch8\nID: sec8_3_mobile_comm",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "l3_mobile_gen",
       label: "\u884c\u52d5\u901a\u8a0a\u4e16\u4ee3",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch8\nID: l3_mobile_gen",
     },
     {
@@ -1505,23 +1513,24 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch8\nID: l4_4g",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch9",
       id: "ch9_internet",
       label: "\u7db2\u969b\u7db2\u8def\u8207\u8cc7\u6e90\u61c9\u7528",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch9\nID: ch9_internet",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch9",
       id: "sec9_1_internet_www",
       label: "\u7db2\u969b\u7db2\u8def\u8207\u5168\u7403\u8cc7\u8a0a\u7db2",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch9\nID: sec9_1_internet_www",
     },
     {
@@ -1555,13 +1564,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch9\nID: l3_www_http_html",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch9",
       id: "sec9_2_services",
       label: "\u7db2\u969b\u7db2\u8def\u670d\u52d9",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch9\nID: sec9_2_services",
     },
     {
@@ -1575,13 +1584,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch9\nID: l3_email_ftp_im",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch9",
       id: "sec9_3_apps",
       label: "\u7db2\u969b\u7db2\u8def\u61c9\u7528",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch9\nID: sec9_3_apps",
     },
     {
@@ -1605,23 +1614,24 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch9\nID: l4_iaas_paas_saas",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch10",
       id: "ch10_ecommerce",
       label: "\u96fb\u5b50\u5546\u52d9\u5c0e\u8ad6",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch10\nID: ch10_ecommerce",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch10",
       id: "sec10_1_intro_ec",
       label: "\u96fb\u5b50\u5546\u52d9\u57fa\u672c\u6982\u5ff5",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch10\nID: sec10_1_intro_ec",
     },
     {
@@ -1636,13 +1646,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch10\nID: l3_4_flows",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch10",
       id: "sec10_2_models",
       label: "\u96fb\u5b50\u5546\u52d9\u7d93\u71df\u6a21\u5f0f",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch10\nID: sec10_2_models",
     },
     {
@@ -1676,13 +1686,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch10\nID: l3_c2c",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch10",
       id: "sec10_3_payment",
       label: "\u96fb\u5b50\u5546\u52d9\u4ed8\u6b3e\u6a5f\u5236",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch10\nID: sec10_3_payment",
     },
     {
@@ -1696,13 +1706,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch10\nID: l3_online_payment",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch10",
       id: "sec10_5_security",
       label: "\u7db2\u8def\u4ea4\u6613\u5b89\u5168\u6a5f\u5236",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch10\nID: sec10_5_security",
     },
     {
@@ -1716,33 +1726,34 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch10\nID: l3_set_ssl",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "l3_encryption",
       label: "\u52a0\u5bc6\u6280\u8853",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch11\nID: l3_encryption",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "ch11_security_ethics",
       label: "\u8cc7\u8a0a\u5b89\u5168\u8207\u502b\u7406",
-      level: 1,
+      /*level: 1,
       shape: "dot",
-      size: 40,
+      size: 40,*/
+      shape: "box",
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch11\nID: ch11_security_ethics",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "sec11_1_intro_sec",
       label: "\u8a8d\u8b58\u7db2\u8def\u8cc7\u8a0a\u5b89\u5168",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch11\nID: sec11_1_intro_sec",
     },
     {
@@ -1756,13 +1767,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch11\nID: l3_sec_threats",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "sec11_2_techniques",
       label: "\u7db2\u8def\u8cc7\u8a0a\u5b89\u5168\u6280\u8853",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch11\nID: sec11_2_techniques",
     },
     {
@@ -1806,13 +1817,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch11\nID: l3_firewall",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "sec11_3_malware",
       label: "\u60e1\u610f\u8edf\u9ad4\u8207\u9632\u7bc4",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch11\nID: sec11_3_malware",
     },
     {
@@ -1846,13 +1857,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch11\nID: l3_adware",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "sec11_4_ethics_law",
       label: "\u8a8d\u8b58\u8cc7\u8a0a\u502b\u7406\u8207\u6cd5\u5f8b",
-      level: 2,
+      /*level: 2,
       shape: "dot",
-      size: 25,
+      size: 25,*/
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch11\nID: sec11_4_ethics_law",
     },
     {
