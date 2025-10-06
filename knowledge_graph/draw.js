@@ -587,13 +587,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch3\nID: l3_ram",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "l3_gpu",
       label: "\u986f\u793a\u5361",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch3\nID: l3_gpu",
     },
     {
@@ -607,13 +607,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch3\nID: l4_vga_dvi_hdmi",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch3",
       id: "l3_storage",
       label: "\u786c\u789f\u6a5f/\u5149\u789f\u6a5f",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch3\nID: l3_storage",
     },
     {
@@ -807,13 +807,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch4\nID: l3_multimedia_sw",
     },
     {
-      font: { color: "black" },
+      font: { color: "white" },
       group: "ch4",
       id: "sec4_4_maintenance",
       label: "\u8edf\u9ad4\u5b89\u88dd\u8207\u7dad\u8b77",
-      /*level: 2,
+      level: 2,
       shape: "dot",
-      size: 25,*/
+      size: 25,
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch4\nID: sec4_4_maintenance",
     },
     {
@@ -1029,13 +1029,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch6\nID: ch6_multimedia",
     },
     {
-      font: { color: "black" },
+      font: { color: "white" },
       group: "ch6",
       id: "sec6_1_intro_mm",
       label: "\u8a8d\u8b58\u591a\u5a92\u9ad4",
-      /*level: 2,
+      level: 2,
       shape: "dot",
-      size: 25,*/
+      size: 25,
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch6\nID: sec6_1_intro_mm",
     },
     {
@@ -1261,13 +1261,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch7\nID: sec7_3_relational_db",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch7",
       id: "l3_key",
       label: "\u9375\u503c (Key)",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch7\nID: l3_key",
     },
     {
@@ -1333,13 +1333,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 1\n\u7fa4\u7d44: ch8\nID: ch8_network",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "l3_net_type",
       label: "\u7db2\u8def\u985e\u578b",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch8\nID: l3_net_type",
     },
     {
@@ -1393,13 +1393,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch8\nID: l4_hub",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch8",
       id: "l3_topology",
       label: "\u7db2\u8def\u62d3\u6a38",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch8\nID: l3_topology",
     },
     {
@@ -1534,13 +1534,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch9\nID: sec9_1_internet_www",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch9",
       id: "l3_ip_dns",
       label: "IP\u4f4d\u5740 \u0026 DNS",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch9\nID: l3_ip_dns",
     },
     {
@@ -1594,13 +1594,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 2\n\u7fa4\u7d44: ch9\nID: sec9_3_apps",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch9",
       id: "l3_cloud",
       label: "\u96f2\u7aef\u904b\u7b97",
-      level: 3,
+      /*level: 3,
       shape: "dot",
-      size: 15,
+      size: 15,*/
       title: "\u5c64\u7d1a: 3\n\u7fa4\u7d44: ch9\nID: l3_cloud",
     },
     {
@@ -1787,13 +1787,13 @@ function drawGraph() {
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch11\nID: l4_symmetric_enc",
     },
     {
-      font: { color: "white" },
+      font: { color: "black" },
       group: "ch11",
       id: "l4_asymmetric_enc",
       label: "\u975e\u5c0d\u7a31\u5f0f\u52a0\u5bc6",
-      level: 4,
+      /*level: 4,
       shape: "dot",
-      size: 10,
+      size: 10,*/
       title: "\u5c64\u7d1a: 4\n\u7fa4\u7d44: ch11\nID: l4_asymmetric_enc",
     },
     {
