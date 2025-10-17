@@ -1,0 +1,990 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "label": "中長程發展計畫",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a",
+      "label": "A：「學生本位規劃課程、創新教學提升品質」",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b",
+      "label": "B：「提升特色研究量能、擴展產學創新合作」",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "c",
+      "label": "C：「品德教育全人發展、重視學生學習輔導」",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "d",
+      "label": "D：「加強師生國際移動力、建立國際化校園」",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "e",
+      "label": "E：「善盡大學社會責任、知識服務永續發展」",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "f",
+      "label": "F：「落實ESG 永續發展指標、提升行政組織效能」",
+      "level": 1,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a1",
+      "label": "A1 課程與時俱進，鏈結創新力與就業力",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a2",
+      "label": "A2 深化就業職能",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b1",
+      "label": "B1 強化研產鍊結發展模式",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b2",
+      "label": "B2 區域型研究能力整合",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "c1",
+      "label": "C1 深化學生事務與輔導服務",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "c2",
+      "label": "C2 推動教育公共性",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "d1",
+      "label": "D1 推動國際交流、提升師生國際移動力",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "d2",
+      "label": "D2 建立國際化校園環境、國際學生移動力",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "e1",
+      "label": "E1 善盡大學社會責任",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "e2",
+      "label": "E2 強化推廣教育能量—成人教育與終身學習",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "f1",
+      "label": "F1 強化智慧校園落實資通安全",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "f2",
+      "label": "F2 妥善人資規劃、永續經營",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+
+    {
+      "id": "a1_1",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a1_2",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a1_3",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a1_4",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a2_1",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a2_2",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a2_3",
+      "label": "FXXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "a2_4",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+
+    {
+      "id": "b1_1",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b1_2",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b1_3",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+
+    {
+      "id": "b2_1",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b2_2",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+    {
+      "id": "b2_3",
+      "label": "XXXX",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    },
+
+
+    /* ******* */
+
+    {
+      "id": "a_1_1",
+      "label": "F2 妥善人資規劃、永續經營",
+      "level": 2,
+      "group": "tnu_dev_plan"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sec1_1_history",
+      "target": "ch1_intro_app",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_gen1",
+      "target": "sec1_1_history",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_gen2",
+      "target": "sec1_1_history",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_gen3",
+      "target": "sec1_1_history",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_gen4",
+      "target": "sec1_1_history",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_gen5",
+      "target": "sec1_1_history",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec1_2_types",
+      "target": "ch1_intro_app",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_supercomputer",
+      "target": "sec1_2_types",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_mainframe",
+      "target": "sec1_2_types",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_minicomputer",
+      "target": "sec1_2_types",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_microcomputer",
+      "target": "sec1_2_types",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_pc", "target": "l3_microcomputer", "label": "是一種" },
+    { "source": "l5_desktop", "target": "l4_pc", "label": "是...的一部分" },
+    { "source": "l5_notebook", "target": "l4_pc", "label": "是...的一部分" },
+    { "source": "l4_tablet", "target": "l3_microcomputer", "label": "是一種" },
+    {
+      "source": "l4_smartphone",
+      "target": "l3_microcomputer",
+      "label": "是一種"
+    },
+    {
+      "source": "sec1_3_apps",
+      "target": "ch1_intro_app",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_personal_apps",
+      "target": "sec1_3_apps",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_edu_apps",
+      "target": "sec1_3_apps",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_social_apps",
+      "target": "sec1_3_apps",
+      "label": "是...的一部分"
+    },
+
+    {
+      "source": "sec2_1_units",
+      "target": "ch2_data_proc",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_bit_byte",
+      "target": "sec2_1_units",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_data_rate",
+      "target": "sec2_1_units",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec2_2_num_sys",
+      "target": "ch2_data_proc",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_binary",
+      "target": "sec2_2_num_sys",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_decimal",
+      "target": "sec2_2_num_sys",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_octal_hex",
+      "target": "sec2_2_num_sys",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec2_3_representation",
+      "target": "ch2_data_proc",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_integer_rep",
+      "target": "sec2_3_representation",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_float_rep",
+      "target": "sec2_3_representation",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_text_rep",
+      "target": "sec2_3_representation",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_ascii", "target": "l3_text_rep", "label": "是一種" },
+    { "source": "l4_big5", "target": "l3_text_rep", "label": "是一種" },
+    { "source": "l4_unicode", "target": "l3_text_rep", "label": "是一種" },
+
+    {
+      "source": "sec3_1_components",
+      "target": "ch3_hardware",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_5units",
+      "target": "sec3_1_components",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_input_unit", "target": "l3_5units", "label": "構成" },
+    { "source": "l4_output_unit", "target": "l3_5units", "label": "構成" },
+    { "source": "l4_control_unit", "target": "l3_5units", "label": "構成" },
+    { "source": "l4_memory_unit", "target": "l3_5units", "label": "構成" },
+    { "source": "l4_alu", "target": "l3_5units", "label": "構成" },
+    {
+      "source": "sec3_2_main_unit",
+      "target": "ch3_hardware",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_cpu",
+      "target": "sec3_2_main_unit",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_register", "target": "l3_cpu", "label": "包含" },
+    { "source": "l4_cache", "target": "l3_cpu", "label": "包含" },
+    { "source": "l5_l1_cache", "target": "l4_cache", "label": "是...的一部分" },
+    { "source": "l5_l2_cache", "target": "l4_cache", "label": "是...的一部分" },
+    { "source": "l5_l3_cache", "target": "l4_cache", "label": "是...的一部分" },
+    { "source": "l4_clock", "target": "l3_cpu", "label": "是...的屬性" },
+    { "source": "l4_cisc_risc", "target": "l3_cpu", "label": "是一種架構" },
+    {
+      "source": "l4_control_unit",
+      "target": "l3_cpu",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_alu", "target": "l3_cpu", "label": "是...的一部分" },
+    {
+      "source": "l3_motherboard",
+      "target": "sec3_2_main_unit",
+      "label": "是...的一部分"
+    },
+    { "source": "l3_cpu", "target": "l3_motherboard", "label": "安裝於" },
+    { "source": "l3_ram", "target": "l3_motherboard", "label": "安裝於" },
+    { "source": "l3_gpu", "target": "l3_motherboard", "label": "安裝於" },
+    {
+      "source": "l3_ram",
+      "target": "sec3_2_main_unit",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_gpu",
+      "target": "sec3_2_main_unit",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_vga_dvi_hdmi", "target": "l3_gpu", "label": "提供" },
+    {
+      "source": "l3_storage",
+      "target": "sec3_2_main_unit",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_sata", "target": "l3_storage", "label": "使用介面" },
+    {
+      "source": "sec3_3_io",
+      "target": "ch3_hardware",
+      "label": "是...的一部分"
+    },
+    { "source": "l3_usb", "target": "sec3_3_io", "label": "是常用介面" },
+    {
+      "source": "sec3_4_faq",
+      "target": "ch3_hardware",
+      "label": "是...的一部分"
+    },
+
+    {
+      "source": "sec4_1_classification",
+      "target": "ch4_software",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_sw_func_class",
+      "target": "sec4_1_classification",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_system_sw",
+      "target": "l3_sw_func_class",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_app_sw",
+      "target": "l3_sw_func_class",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_sw_auth_class",
+      "target": "sec4_1_classification",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_proprietary_sw",
+      "target": "l3_sw_auth_class",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_free_sw",
+      "target": "l3_sw_auth_class",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_shareware",
+      "target": "l3_sw_auth_class",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_freeware",
+      "target": "l3_sw_auth_class",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec4_2_system_sw_detail",
+      "target": "ch4_software",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_utility",
+      "target": "sec4_2_system_sw_detail",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_dev_tool",
+      "target": "sec4_2_system_sw_detail",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec4_3_app_sw_detail",
+      "target": "ch4_software",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_office_sw",
+      "target": "sec4_3_app_sw_detail",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_multimedia_sw",
+      "target": "sec4_3_app_sw_detail",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec4_4_maintenance",
+      "target": "ch4_software",
+      "label": "是...的一部分"
+    },
+
+    {
+      "source": "sec5_1_intro_os",
+      "target": "ch5_os",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_os_func",
+      "target": "sec5_1_intro_os",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_gui_cli",
+      "target": "l3_os_func",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_resource_mgt",
+      "target": "l3_os_func",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_os_structure",
+      "target": "sec5_1_intro_os",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_layered_kernel",
+      "target": "l3_os_structure",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_os_op",
+      "target": "sec5_1_intro_os",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_interrupt",
+      "target": "l3_os_op",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_process_mgt",
+      "target": "l3_os_op",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec5_2_os_types",
+      "target": "ch5_os",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_batch_multi",
+      "target": "sec5_2_os_types",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec5_3_common_os",
+      "target": "ch5_os",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_desktop_os",
+      "target": "sec5_3_common_os",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_windows", "target": "l3_desktop_os", "label": "是一種" },
+    { "source": "l4_macos", "target": "l3_desktop_os", "label": "是一種" },
+    { "source": "l4_linux", "target": "l3_desktop_os", "label": "是一種" },
+    {
+      "source": "l3_mobile_os",
+      "target": "sec5_3_common_os",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_ios", "target": "l3_mobile_os", "label": "是一種" },
+    { "source": "l4_android", "target": "l3_mobile_os", "label": "是一種" },
+
+    {
+      "source": "sec6_1_intro_mm",
+      "target": "ch6_multimedia",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec6_2_text",
+      "target": "ch6_multimedia",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_font_type",
+      "target": "sec6_2_text",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_font_format",
+      "target": "sec6_2_text",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec6_3_audio",
+      "target": "ch6_multimedia",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_audio_digital",
+      "target": "sec6_3_audio",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_audio_format",
+      "target": "sec6_3_audio",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec6_4_image",
+      "target": "ch6_multimedia",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_bitmap_vector",
+      "target": "sec6_4_image",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_color_model",
+      "target": "sec6_4_image",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_image_format",
+      "target": "sec6_4_image",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec6_5_video",
+      "target": "ch6_multimedia",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_video_principle",
+      "target": "sec6_5_video",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_video_format",
+      "target": "sec6_5_video",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec6_6_animation",
+      "target": "ch6_multimedia",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_2d_3d_anim",
+      "target": "sec6_6_animation",
+      "label": "是...的一部分"
+    },
+
+    {
+      "source": "sec7_1_principles",
+      "target": "ch7_database",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_data_hierarchy",
+      "target": "sec7_1_principles",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_dbms",
+      "target": "sec7_1_principles",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec7_2_db_types",
+      "target": "ch7_database",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_db_models",
+      "target": "sec7_2_db_types",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec7_3_relational_db",
+      "target": "ch7_database",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_key",
+      "target": "sec7_3_relational_db",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_pk_fk", "target": "l3_key", "label": "是...的一部分" },
+    {
+      "source": "l3_erd",
+      "target": "sec7_3_relational_db",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_normalization",
+      "target": "sec7_3_relational_db",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_sql",
+      "target": "sec7_3_relational_db",
+      "label": "是...的一部分"
+    },
+
+    {
+      "source": "sec8_1_intro_net",
+      "target": "ch8_network",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_net_type",
+      "target": "sec8_1_intro_net",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_lan_wan",
+      "target": "l3_net_type",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_net_devices",
+      "target": "sec8_1_intro_net",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_router",
+      "target": "l3_net_devices",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_switch",
+      "target": "l3_net_devices",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_hub",
+      "target": "l3_net_devices",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_topology",
+      "target": "sec8_1_intro_net",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_star_ring_bus",
+      "target": "l3_topology",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec8_2_protocols",
+      "target": "ch8_network",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_osi_model",
+      "target": "sec8_2_protocols",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_tcpip_model",
+      "target": "sec8_2_protocols",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_ieee802",
+      "target": "sec8_2_protocols",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_802_3", "target": "l3_ieee802", "label": "是...的一部分" },
+    { "source": "l4_802_11", "target": "l3_ieee802", "label": "是...的一部分" },
+    {
+      "source": "sec8_3_mobile_comm",
+      "target": "ch8_network",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_mobile_gen",
+      "target": "sec8_3_mobile_comm",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_3g", "target": "l3_mobile_gen", "label": "是...的一部分" },
+    { "source": "l4_4g", "target": "l3_mobile_gen", "label": "是...的一部分" },
+
+    {
+      "source": "sec9_1_internet_www",
+      "target": "ch9_internet",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_ip_dns",
+      "target": "sec9_1_internet_www",
+      "label": "是...的一部分"
+    },
+    { "source": "l4_ipv4_ipv6", "target": "l3_ip_dns", "label": "包含" },
+    {
+      "source": "l3_www_http_html",
+      "target": "sec9_1_internet_www",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec9_2_services",
+      "target": "ch9_internet",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_email_ftp_im",
+      "target": "sec9_2_services",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec9_3_apps",
+      "target": "ch9_internet",
+      "label": "是...的一部分"
+    },
+    { "source": "l3_cloud", "target": "sec9_3_apps", "label": "是...的一部分" },
+    {
+      "source": "l4_iaas_paas_saas",
+      "target": "l3_cloud",
+      "label": "包含服務模式"
+    },
+
+    {
+      "source": "sec10_1_intro_ec",
+      "target": "ch10_ecommerce",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_4_flows",
+      "target": "sec10_1_intro_ec",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec10_2_models",
+      "target": "ch10_ecommerce",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_b2b",
+      "target": "sec10_2_models",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_b2c",
+      "target": "sec10_2_models",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_c2c",
+      "target": "sec10_2_models",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec10_3_payment",
+      "target": "ch10_ecommerce",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_online_payment",
+      "target": "sec10_3_payment",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec10_5_security",
+      "target": "ch10_ecommerce",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_set_ssl",
+      "target": "sec10_5_security",
+      "label": "是...的一部分"
+    },
+
+    {
+      "source": "sec11_1_intro_sec",
+      "target": "ch11_security_ethics",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_sec_threats",
+      "target": "sec11_1_intro_sec",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec11_2_techniques",
+      "target": "ch11_security_ethics",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_encryption",
+      "target": "sec11_2_techniques",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l4_symmetric_enc",
+      "target": "l3_encryption",
+      "label": "是...的一種"
+    },
+    {
+      "source": "l4_asymmetric_enc",
+      "target": "l3_encryption",
+      "label": "是...的一種"
+    },
+    {
+      "source": "l3_digital_signature",
+      "target": "sec11_2_techniques",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_firewall",
+      "target": "sec11_2_techniques",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec11_3_malware",
+      "target": "ch11_security_ethics",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_virus",
+      "target": "sec11_3_malware",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_spyware",
+      "target": "sec11_3_malware",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_adware",
+      "target": "sec11_3_malware",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "sec11_4_ethics_law",
+      "target": "ch11_security_ethics",
+      "label": "是...的一部分"
+    },
+    {
+      "source": "l3_ipr",
+      "target": "sec11_4_ethics_law",
+      "label": "是...的一部分"
+    },
+
+    { "source": "ch3_hardware", "target": "ch4_software", "label": "相互依存" },
+    { "source": "ch5_os", "target": "ch3_hardware", "label": "管理" },
+    { "source": "ch5_os", "target": "ch4_software", "label": "是...的平台" },
+    {
+      "source": "ch2_data_proc",
+      "target": "ch3_hardware",
+      "label": "是...的基礎"
+    },
+    { "source": "l3_binary", "target": "l3_text_rep", "label": "是...的基礎" },
+    { "source": "ch9_internet", "target": "ch8_network", "label": "建構於" },
+    { "source": "ch10_ecommerce", "target": "ch9_internet", "label": "應用於" },
+    { "source": "l3_set_ssl", "target": "l3_encryption", "label": "使用" },
+    {
+      "source": "l3_digital_signature",
+      "target": "l4_asymmetric_enc",
+      "label": "使用"
+    },
+    {
+      "source": "ch11_security_ethics",
+      "target": "ch10_ecommerce",
+      "label": "是...的重要考量"
+    },
+    { "source": "ch6_multimedia", "target": "l4_app_sw", "label": "是一種" },
+    { "source": "ch7_database", "target": "l4_app_sw", "label": "是一種" }
+  ]
+}

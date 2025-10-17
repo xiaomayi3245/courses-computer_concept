@@ -1,135 +1,243 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>計算機概論課程目錄</title>
     <!-- 引入 Tailwind CSS 以進行快速且響應式的樣式設計 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 Google Fonts 的 Inter 字體 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        /* 自定義樣式 */
-        body {
-            font-family: 'Inter', 'Noto Sans TC', sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        /* 定義一個背景漸變 */
-        .gradient-bg {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
+      /* 自定義樣式 */
+      body {
+        font-family: "Inter", "Noto Sans TC", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* 定義一個背景漸變 */
+      .gradient-bg {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
     </style>
-</head>
-<body class="gradient-bg min-h-screen flex items-center justify-center p-4 sm:p-6">
-
+  </head>
+  <body
+    class="gradient-bg min-h-screen flex items-center justify-center p-4 sm:p-6"
+  >
     <!-- 主內容容器 -->
-    <div class="w-full max-w-2xl bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 sm:p-8 md:p-10">
-        
-        <!-- 標題部分 -->
-        <header class="text-center mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight">計算機概論</h1>
-            <p class="mt-2 text-md text-gray-600">課程章節目錄</p>
-        </header>
+    <div
+      class="w-full max-w-2xl bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 sm:p-8 md:p-10"
+    >
+      <!-- 標題部分 -->
+      <header class="text-center mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 tracking-tight">
+          計算機概論
+        </h1>
+        <p class="mt-2 text-md text-gray-600">課程章節目錄</p>
+      </header>
 
-        <!-- 章節列表 -->
-        <main>
-            <ol class="space-y-4">
-                <!-- 每一章都是一個列表項 -->
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 1 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">電腦科技的認識與應用</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 2 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">電腦處理資訊的方式</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 3 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">電腦硬體組成與周邊設備</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 4 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">電腦軟體簡介</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 5 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">作業系統</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 6 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">數位多媒體</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 7 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">資料庫</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="ch01/index.html" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 8 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">網路與行動通訊基本概念</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 9 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">網際網路與資源應用</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 10 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">電子商務導論</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-                        <div class="flex items-center space-x-4">
-                            <span class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800">第 11 章</span>
-                            <span class="text-gray-700 font-medium group-hover:text-gray-900">資訊安全與資訊倫理</span>
-                        </div>
-                    </a>
-                </li>
-            </ol>
-        </main>
-
+      <!-- 章節列表 -->
+      <main>
+        <ol class="space-y-4">
+          <!-- 每一章都是一個列表項 -->
+           <!--
+          <li>
+            <a
+              href="ch01/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >主題 1</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >電腦科技的認識與應用</span
+                >
+              </div>
+            </a>
+          </li>
+        -->
+          <li>
+            <a
+              href="transport_interface/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >主題 1</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >電腦影音傳輸介面</span
+                >
+              </div>
+            </a>
+          </li>
+          <!--
+          <li>
+            <a
+              href="ch03/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 3 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >電腦硬體組成與周邊設備</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch04/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 4 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >電腦軟體簡介</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch05/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 5 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >作業系統</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch06/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 6 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >數位多媒體</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch07/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 7 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >資料庫</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch08/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 8 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >網路與行動通訊基本概念</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch09/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 9 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >網際網路與資源應用</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch10/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 10 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >電子商務導論</span
+                >
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="ch11/index.html"
+              class="group block p-5 bg-gray-50 rounded-lg border border-gray-200 hover:bg-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              <div class="flex items-center space-x-4">
+                <span
+                  class="flex-shrink-0 text-lg font-semibold text-indigo-600 group-hover:text-indigo-800"
+                  >第 11 章</span
+                >
+                <span
+                  class="text-gray-700 font-medium group-hover:text-gray-900"
+                  >資訊安全與資訊倫理</span
+                >
+              </div>
+            </a>
+          </li>
+        -->
+        </ol>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>
